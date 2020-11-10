@@ -1,0 +1,50 @@
+{
+    "name": "e-your-self",
+    "version": "1.0.0",
+    "description": "Social network for creative people",
+    "main": "server.js",
+    "scripts": {
+        "test": "npm run lint",
+        "start": "node server.js",
+        "lint": "eslint --quiet .",
+        "fix": "eslint --fix .",
+        "watch": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/VolodymyrBaisa/Project-2.git"
+    },
+    "keywords": [
+        "social",
+        "netwirk",
+        "creativity",
+        "people"
+    ],
+    "author": "Volodymyr Baisa, Ava Lorusso, Imogen Cooper, Luis Feliz",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/VolodymyrBaisa/Project-2/issues"
+    },
+    "homepage": "https://github.com/VolodymyrBaisa/Project-2#readme",
+    "devDependencies": {
+        "eslint": "^7.13.0",
+        "eslint-config-airbnb": "^18.2.1",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-config-node": "^4.1.0",
+        "eslint-config-prettier": "^6.15.0",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-react": "^7.21.5",
+        "eslint-plugin-react-hooks": "^4.0.0",
+        "prettier": "^2.1.2"
+    },
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-handlebars": "^5.2.0",
+        "mysql2": "^2.2.5",
+        "sequelize": "^6.3.5"
+    }
+}
