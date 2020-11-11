@@ -20,7 +20,9 @@ app.engine(
 );
 
 app.set("view engine", "handlebars");
+var routes = require("./routes/api-routes/index");
 
+app.use(routes);
 app.listen(PORT, () => {
   console.log("🌎 => live on http://localhost:%s", PORT);
 });
