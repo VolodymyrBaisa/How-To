@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $primary-font-color: #1d1d1d;
 $secondary-font-color: #494c4e;
 $third-font-color: #fd2d55;
@@ -17,3 +18,24 @@ $third-color: #626262;
 @import "global";
 @import "index";
 @import "phone";
+=======
+$primary-font-color: #1d1d1d;
+$secondary-font-color: #494c4e;
+$third-font-color: #fd2d55;
+$fourth-font-color: #f7f7f7;
+
+$primary-color: #fd2d55;
+$secondary-color: #f7f7f7;
+$third-color: #626262;
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@import "global";
+@import "index";
+@import "phone";
+>>>>>>> 79ef5e7f81c9867898255e83bd9edf8a168915de
