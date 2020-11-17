@@ -1,0 +1,68 @@
+       {{#each posts}}
+        <div class="post-wrapper">
+            <div class="post-header"> 
+                <div class="user-pic">
+                    <img class="user-pic-img" src="{{#getObject this.dataValues.userprofile 'dataValues' 'user_pic'}}{{/getObject}}" />
+                </div>
+                <div class="user-name">{{#getObject this.dataValues.userprofile 'dataValues' 'u_name'}}{{/getObject}}</div>
+                <div class="check-mark">
+                    <!-- real icon -->
+                    <!-- prettier-ignore -->
+                    <svg class="real-icon-svg" preserveAspectRatio="none" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15.5" cy="15.5" r="15.5" fill="#FD2D55"/>
+                            <path d="M11.4722 24.5971L4.32218 16.7971C3.89263 16.3284 3.89263 15.5687 4.32218 15.1L5.87778 13.4029C6.30734 12.9343 7.00386 12.9343 7.43342 13.4029L12.25 18.6573L22.5666 7.40294C22.9961 6.93433 23.6927 6.93433 24.1222 7.40294L25.6778 9.1C26.1074 9.56861 26.1074 10.3284 25.6778 10.7971L13.0278 24.5971C12.5982 25.0657 11.9017 25.0657 11.4722 24.5971Z" fill="#F7F7F7"/>
+                            </svg>
+                </div>
+                <div class="user-topic">{{#getObject this.dataValues.userprofile 'dataValues' 'topic'}}{{/getObject}}</div>
+            <div class="hashtags-text">{{this.dataValues.tags}}</div>
+            <div class="follow-button-wrapper">
+                <div class="follow-button">Follow</div>
+            </div>
+            </div>
+            <div class="post-content">
+                {{#if (check this.dataValues.u_text)}}
+                    <div class="post-text">
+                        {{this.dataValues.u_text}}
+                    </div>
+                {{/if}}
+                {{#if (check this.dataValues.img_or_video)}}
+                    <img class="post-img" src="{{this.dataValues.img_or_video}}" />
+                {{/if}}
+                {{#if (check this.dataValues.upload)}}
+                    <img class="post-img" src="{{this.dataValues.upload}}" />
+                {{/if}}
+            </div>
+            <div class="post-panel">
+            <div class="likes-wrapper">
+                <div class="likes-button">
+                <!-- like icon -->
+                <!-- prettier-ignore -->
+                <svg class="like-icon-svg" preserveAspectRatio="none" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M39.9433 8.83582C38.9644 7.85641 37.802 7.07948 36.5228 6.5494C35.2435 6.01932 33.8723 5.74649 32.4875 5.74649C31.1027 5.74649 29.7315 6.01932 28.4522 6.5494C27.1729 7.07948 26.0106 7.85641 25.0317 8.83582L23 10.8675L20.9683 8.83582C18.9909 6.85841 16.309 5.74752 13.5125 5.74752C10.716 5.74752 8.03407 6.85841 6.05666 8.83582C4.07925 10.8132 2.96835 13.4952 2.96835 16.2917C2.96835 19.0881 4.07925 21.7701 6.05666 23.7475L8.08833 25.7792L23 40.6908L37.9117 25.7792L39.9433 23.7475C40.9227 22.7685 41.6997 21.6062 42.2297 20.3269C42.7598 19.0476 43.0327 17.6764 43.0327 16.2917C43.0327 14.9069 42.7598 13.5357 42.2297 12.2564C41.6997 10.9771 40.9227 9.81477 39.9433 8.83582V8.83582Z" stroke="#494C4E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                </div>
+                <div class="likes-counter">{{this.dataValues.likes_count}}</div>
+            </div>
+            <div class="comments-wrapper">
+                <div class="comment-button">
+                <!-- comments icon -->
+                <!-- prettier-ignore -->
+                <svg class="comments-icon-svg" preserveAspectRatio="none" viewBox="0 0 43 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.7227 30.1884L7.01847 29.0514L6.16929 28.2394C3.50238 25.6894 2 22.5528 2 19.2188C2 11.5673 10.2241 4.5625 21.5 4.5625C32.7759 4.5625 41 11.5673 41 19.2188C41 26.8702 32.7759 33.875 21.5 33.875C18.5102 33.875 15.6897 33.3479 13.1553 32.4389L12.1341 32.0727L11.2702 32.7289C9.79568 33.8491 7.1901 35.4767 3.76561 36.1397C4.83531 34.6469 6.11461 32.5262 6.7227 30.1884Z" stroke="#494C4E" stroke-width="4"/>
+                            </svg>
+                </div>
+                <div class="comments-counter">{{this.dataValues.comments_count}}</div>
+            </div>
+            <div class="share-wrapper">
+                <!-- share icon -->
+                <!-- prettier-ignore -->
+                <div class="share-button">
+                        <svg class="share-icon-svg" preserveAspectRatio="none" viewBox="0 0 43 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26.212 4.98284C26.2005 5.01033 26.1875 5.0573 26.1875 5.13205V12.4665V14.4416L24.2125 14.4663C17.518 14.5499 11.9178 15.3363 8.03016 17.5668C6.1315 18.6561 4.65656 20.0822 3.64078 21.9574C2.61873 23.8441 2 26.2999 2 29.5313C2 33.8415 4.27225 38.2326 7.03444 41.0036C5.53337 34.9435 5.92062 30.2574 9.04218 27.1206C10.6675 25.4874 12.8537 24.4819 15.3609 23.8633C17.8682 23.2448 20.8307 22.9807 24.1561 22.9285L26.1875 22.8966V24.9282V32.983C26.1875 33.0578 26.2004 33.1048 26.2118 33.1323L40.9306 19.2653C40.9307 19.2653 40.9307 19.2653 40.9307 19.2653C40.9541 19.2432 41 19.177 41 19.0567C41 18.9368 40.9545 18.8708 40.9308 18.8484L26.212 4.98284ZM26.212 4.98284L40.9306 18.8483L26.212 4.98284Z" stroke="#494C4E" stroke-width="4"/>
+                            </svg>                            
+                    </div>
+                <div class="share-counter">{{this.dataValues.share_count}}</div>
+            </div>
+            </div>
+        </div>
+        {{/each}}

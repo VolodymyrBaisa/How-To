@@ -1,0 +1,752 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 0.65vw;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+}
+
+li {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  min-height: 100vh;
+  background: linear-gradient(113.82deg, #4a62cc 0%, rgba(191, 60, 147, 0.610181) 16.15%, rgba(243, 77, 91, 0.536733) 33.85%, rgba(243, 77, 91, 0.536733) 62.5%, rgba(191, 60, 147, 0.610181) 79.69%, #4a62cc 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+section .left-side-wrapper {
+  width: 0;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+section .left-side-wrapper .logo {
+  padding: 0.5vw 0.5vw 0 0.5vw;
+}
+
+section .left-side-wrapper .logo .logo-svg {
+  width: 5vw;
+}
+
+section .left-side-wrapper .home-button .home-svg {
+  width: 3.5vw;
+}
+
+section .followers .followers-svg {
+  width: 3.5vw;
+}
+
+section .likes .likes-svg {
+  width: 3.5vw;
+}
+
+section .hashtags .hashtags-svg {
+  width: 3.5vw;
+}
+
+section .home-button,
+section .followers,
+section .likes,
+section .hashtags {
+  opacity: 0;
+  margin: 1vw 0;
+  padding: 0.5vw;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+section .home-button:hover,
+section .followers:hover,
+section .likes:hover,
+section .hashtags:hover {
+  background: #fd2d55;
+  border-radius: 50%;
+}
+
+section .home-button {
+  margin: 0;
+}
+
+section .user-icon-wrapper {
+  border-radius: 50%;
+  background: #f7f7f7;
+  border: 1px solid #fd2d55;
+  margin-bottom: 1vw;
+  cursor: pointer;
+}
+
+section .user-icon-wrapper .add-new-user-svg {
+  width: 3vw;
+  margin: 0.7vw;
+}
+
+section .content {
+  height: 99.5vh;
+  width: 100%;
+  margin: 0.2vw 0 0 0vw;
+  background: #f7f7f7;
+  padding: 1.5vw;
+  border-radius: 2vw 0px 0px 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+section .content .main-content {
+  position: relative;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  opacity: 0;
+}
+
+section .content .main-content .search {
+  border: 0.2vw solid #fd2d55;
+  padding: 0.5vw 0.8vw 0.2vw 0.5vw;
+  border-radius: 1.5vw 0 0 1.5vw;
+  -webkit-transform: translateX(0.15vw);
+          transform: translateX(0.15vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+section .content .main-content .search .search-icon .search-svg {
+  width: 1.5vw;
+  height: 1.4vw;
+}
+
+section .content .main-content .search .search-input {
+  outline: none;
+  border: none;
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #1d1d1d;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  width: 100%;
+  margin: 0 0 0.2vw 1vw;
+}
+
+section .content .post-scroll-wrapper {
+  height: 88vh;
+  overflow: auto;
+}
+
+section .content .post-scroll-wrapper::-webkit-scrollbar {
+  width: 0;
+}
+
+section .content .right-side {
+  opacity: 0;
+  border-left: 0.2vw solid #fd2d55;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 1vw;
+}
+
+.float-menu-button {
+  z-index: 1000;
+  position: absolute;
+  bottom: 0vw;
+  right: 1.5vw;
+}
+
+.float-menu-button .container {
+  position: relative;
+}
+
+.float-menu-button .container .float-menu-button-svg {
+  position: absolute;
+  width: 5vw;
+  cursor: pointer;
+  z-index: 2000;
+  bottom: 0.5vw;
+  right: 0.5vw;
+}
+
+.float-menu-button .container .float-menu-msg-sub-button-svg {
+  width: 3vw;
+  cursor: pointer;
+}
+
+.float-menu-button .container .float-menu-poll-sub-button-svg {
+  width: 3vw;
+  cursor: pointer;
+}
+
+.float-menu-button .container .float-menu-photo-video-sub-button-svg {
+  width: 3vw;
+  cursor: pointer;
+}
+
+.float-menu-button .container .float-menu-upload-sub-button-svg {
+  width: 3vw;
+  cursor: pointer;
+}
+
+.float-menu-button .container li {
+  list-style-type: none;
+}
+
+.float-menu-button .container > li:nth-child(n + 2) {
+  position: absolute;
+  right: 1.5vw;
+  bottom: 1.5vw;
+  z-index: 1000;
+}
+
+.post-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 98.5%;
+  margin: 2vw 0.5vw 0 0.5vw;
+}
+
+.post-wrapper .post-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.5fr 0.5fr 0.5fr 0.5fr 12fr;
+      grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 12fr;
+      grid-template-areas: "userPic userName checkMark userTopic followButton" "userPic hashtagsText hashtagsText hashtagsText hashtagsText";
+}
+
+.post-wrapper .post-header .user-pic {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: userPic;
+  width: 4.5vw;
+  height: 4.5vw;
+  border-radius: 50%;
+  background: #fd2d55;
+  margin-right: 0.7vw;
+}
+
+.post-wrapper .post-header .user-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: userName;
+  font-weight: bold;
+}
+
+.post-wrapper .post-header .check-mark {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: checkMark;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 0.5vw 0 0.5vw;
+}
+
+.post-wrapper .post-header .check-mark .real-icon-svg {
+  width: 1.1vw;
+}
+
+.post-wrapper .post-header .user-topic {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: userTopic;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-weight: 500;
+}
+
+.post-wrapper .post-header .hashtags-text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: hashtagsText;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-weight: 600;
+}
+
+.post-wrapper .post-header .follow-button-wrapper {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: followButton;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.post-wrapper .post-header .follow-button-wrapper .follow-button {
+  border: 0.15vw solid #fd2d55;
+  border-radius: 0.2vw;
+  padding: 0.2vw 1vw 0.2vw 1vw;
+  color: #fd2d55;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 2vw;
+}
+
+.post-wrapper .post-content {
+  margin: 1vw 5.5vw;
+  color: #1d1d1d;
+}
+
+.post-wrapper .post-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 40%;
+}
+
+.post-wrapper .post-panel .likes-wrapper,
+.post-wrapper .post-panel .comments-wrapper,
+.post-wrapper .post-panel .share-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.post-wrapper .post-panel .likes-wrapper .likes-button,
+.post-wrapper .post-panel .likes-wrapper .comment-button,
+.post-wrapper .post-panel .likes-wrapper .share-button,
+.post-wrapper .post-panel .comments-wrapper .likes-button,
+.post-wrapper .post-panel .comments-wrapper .comment-button,
+.post-wrapper .post-panel .comments-wrapper .share-button,
+.post-wrapper .post-panel .share-wrapper .likes-button,
+.post-wrapper .post-panel .share-wrapper .comment-button,
+.post-wrapper .post-panel .share-wrapper .share-button {
+  cursor: pointer;
+}
+
+.post-wrapper .post-panel .likes-wrapper .likes-button .like-icon-svg,
+.post-wrapper .post-panel .likes-wrapper .likes-button .comments-icon-svg,
+.post-wrapper .post-panel .likes-wrapper .likes-button .share-icon-svg,
+.post-wrapper .post-panel .likes-wrapper .comment-button .like-icon-svg,
+.post-wrapper .post-panel .likes-wrapper .comment-button .comments-icon-svg,
+.post-wrapper .post-panel .likes-wrapper .comment-button .share-icon-svg,
+.post-wrapper .post-panel .likes-wrapper .share-button .like-icon-svg,
+.post-wrapper .post-panel .likes-wrapper .share-button .comments-icon-svg,
+.post-wrapper .post-panel .likes-wrapper .share-button .share-icon-svg,
+.post-wrapper .post-panel .comments-wrapper .likes-button .like-icon-svg,
+.post-wrapper .post-panel .comments-wrapper .likes-button .comments-icon-svg,
+.post-wrapper .post-panel .comments-wrapper .likes-button .share-icon-svg,
+.post-wrapper .post-panel .comments-wrapper .comment-button .like-icon-svg,
+.post-wrapper .post-panel .comments-wrapper .comment-button .comments-icon-svg,
+.post-wrapper .post-panel .comments-wrapper .comment-button .share-icon-svg,
+.post-wrapper .post-panel .comments-wrapper .share-button .like-icon-svg,
+.post-wrapper .post-panel .comments-wrapper .share-button .comments-icon-svg,
+.post-wrapper .post-panel .comments-wrapper .share-button .share-icon-svg,
+.post-wrapper .post-panel .share-wrapper .likes-button .like-icon-svg,
+.post-wrapper .post-panel .share-wrapper .likes-button .comments-icon-svg,
+.post-wrapper .post-panel .share-wrapper .likes-button .share-icon-svg,
+.post-wrapper .post-panel .share-wrapper .comment-button .like-icon-svg,
+.post-wrapper .post-panel .share-wrapper .comment-button .comments-icon-svg,
+.post-wrapper .post-panel .share-wrapper .comment-button .share-icon-svg,
+.post-wrapper .post-panel .share-wrapper .share-button .like-icon-svg,
+.post-wrapper .post-panel .share-wrapper .share-button .comments-icon-svg,
+.post-wrapper .post-panel .share-wrapper .share-button .share-icon-svg {
+  width: 2.5vw;
+}
+
+.post-wrapper .post-panel .likes-wrapper .likes-counter,
+.post-wrapper .post-panel .likes-wrapper .comments-counter,
+.post-wrapper .post-panel .likes-wrapper .share-counter,
+.post-wrapper .post-panel .comments-wrapper .likes-counter,
+.post-wrapper .post-panel .comments-wrapper .comments-counter,
+.post-wrapper .post-panel .comments-wrapper .share-counter,
+.post-wrapper .post-panel .share-wrapper .likes-counter,
+.post-wrapper .post-panel .share-wrapper .comments-counter,
+.post-wrapper .post-panel .share-wrapper .share-counter {
+  color: #494c4e;
+  margin-left: 0.5vw;
+}
+
+.right-side .panel-wrapper .panel-scroll-wrapper {
+  height: 88vh;
+  overflow: auto;
+}
+
+.right-side .panel-wrapper .panel-scroll-wrapper::-webkit-scrollbar {
+  width: 0;
+}
+
+.right-side .panel-wrapper .header {
+  color: #494c4e;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.right-side .panel-wrapper .user {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.5fr 0.5fr 12fr;
+      grid-template-columns: 0.5fr 0.5fr 12fr;
+      grid-template-areas: "userPic userName checkMark" "userPic userTopic userTopic";
+  margin: 1vw 0;
+}
+
+.right-side .panel-wrapper .user .user-pic {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: userPic;
+  width: 4.5vw;
+  height: 4.5vw;
+  border-radius: 50%;
+  background: #fd2d55;
+  margin-right: 0.7vw;
+}
+
+.right-side .panel-wrapper .user .user-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: userName;
+  font-weight: bold;
+}
+
+.right-side .panel-wrapper .user .user-mark {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: checkMark;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 0.5vw 0 0.5vw;
+}
+
+.right-side .panel-wrapper .user .user-mark .real-icon-svg {
+  width: 1.1vw;
+}
+
+.right-side .panel-wrapper .user .user-topic {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: userTopic;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-weight: 500;
+}
+
+.user-login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -200%);
+          transform: translate(-50%, -200%);
+  width: 65vw;
+  height: 27vw;
+  border: 1px solid #fd2d55;
+  border-radius: 2vw;
+  background: #f7f7f7;
+  padding: 2vw;
+}
+
+.user-login .close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  cursor: pointer;
+}
+
+.user-login .close .close-icon-svg {
+  width: 1.5vw;
+}
+
+.user-login hr {
+  border: 1px solid #fd2d55;
+  background: #fd2d55;
+  margin: 1.5vw 2vw;
+}
+
+.user-login .header-text {
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin-top: 2vw;
+}
+
+.user-login .buttons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1.5vw;
+}
+
+.user-login .buttons-wrapper .login-user-button,
+.user-login .buttons-wrapper .login-facebook-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 35%;
+  padding: 0.3vw 1vw;
+  border: 1px solid #fd2d55;
+  border-radius: 0.2vw;
+  margin: 0.5vw 0;
+  cursor: pointer;
+}
+
+.user-login .buttons-wrapper .login-user-button .user-icon .user-icon-svg,
+.user-login .buttons-wrapper .login-user-button .user-icon .facebook-icon-svg,
+.user-login .buttons-wrapper .login-user-button .facebook-icon .user-icon-svg,
+.user-login .buttons-wrapper .login-user-button .facebook-icon .facebook-icon-svg,
+.user-login .buttons-wrapper .login-facebook-button .user-icon .user-icon-svg,
+.user-login .buttons-wrapper .login-facebook-button .user-icon .facebook-icon-svg,
+.user-login .buttons-wrapper .login-facebook-button .facebook-icon .user-icon-svg,
+.user-login .buttons-wrapper .login-facebook-button .facebook-icon .facebook-icon-svg {
+  width: 1.2vw;
+}
+
+.user-login .buttons-wrapper .login-user-button .text,
+.user-login .buttons-wrapper .login-facebook-button .text {
+  font-weight: bold;
+  color: #494c4e;
+  width: 100%;
+  text-align: center;
+}
+
+.user-login .sign-up {
+  text-align: center;
+  margin-top: 7vw;
+}
+
+.user-login .sign-up .sign-up-part {
+  color: #fd2d55;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.off {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
