@@ -1,9 +1,11 @@
-$primary-font-color: #000000;
+$primary-font-color: #1d1d1d;
 $secondary-font-color: #494c4e;
+$third-font-color: #fd2d55;
+$fourth-font-color: #f7f7f7;
 
-$primary-color: #1d2c3e;
-$secondary-color: #3d4958;
-$third-color: #f4f4f4;
+$primary-color: #fd2d55;
+$secondary-color: #f7f7f7;
+$third-color: #626262;
 
 @mixin flex($justify, $align, $direction) {
   display: flex;
