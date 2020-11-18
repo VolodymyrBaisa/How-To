@@ -1,3 +1,29 @@
+<<<<<<< HEAD
+{
+  "development": {
+    "username": "root",
+    "database": "how_to_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "define": {
+      "timestamps": false
+    }
+  },
+  "test": {
+    "username": "root",
+    "database": "how_to_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql",
+    "dialectOptions": {
+      "charset": "utf8"
+    }
+  }
+}
+=======
 
   "development": {
     "username": "root",
@@ -22,3 +48,4 @@
     }
   }
 
+>>>>>>> 79ef5e7f81c9867898255e83bd9edf8a168915de
