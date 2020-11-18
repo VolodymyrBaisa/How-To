@@ -4,7 +4,7 @@ const router = express.Router();
 const db = require("../../models");
 
 // routing (html) /posts
-router.get("/api/search/:searchedWord", (req, res, next) => {
+router.get("/search", (req, res, next) => {
   // get posts from db and send to template
   db.postcomments
     .findAll({

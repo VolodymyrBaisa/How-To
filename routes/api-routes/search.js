@@ -5,7 +5,7 @@ const db = require("../../models");
 // /API/COMMENTS/
 // post comment route -> back to index
 router
-  .route("/api/search/:searchTag")
+  .route("/search/:searchTag")
   // POST to posts
   .get((req, res, next) => {
     console.log(req.params.searchTag);
