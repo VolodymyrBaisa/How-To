@@ -291,7 +291,7 @@ section .content .right-side {
   display: grid;
   -ms-grid-columns: 0.5fr 0.5fr 0.5fr 0.5fr 12fr;
       grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 12fr;
-      grid-template-areas: "userPic userName checkMark userTopic followButton" "userPic hashtagsText hashtagsText hashtagsText hashtagsText";
+      grid-template-areas: "userPic userName checkMark userTopic followButton" "userPic hashtagsText hashtagsText hashtagsText hashtagsText";
 }
 
 .post-wrapper .post-header .user-pic {
@@ -561,11 +561,12 @@ section .content .right-side {
   display: grid;
   -ms-grid-columns: 0.5fr 0.5fr 12fr;
       grid-template-columns: 0.5fr 0.5fr 12fr;
-      grid-template-areas: "userPic userName checkMark" "userPic userTopic userTopic";
+      grid-template-areas: "userPic userName checkMark" "userPic userTopic userTopic";
   margin: 1vw 0;
 }
 
 .right-side .panel-wrapper .user .user-pic {
+  position: relative;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
@@ -575,6 +576,18 @@ section .content .right-side {
   border-radius: 50%;
   background: #fd2d55;
   margin-right: 0.7vw;
+}
+
+.right-side .panel-wrapper .user .user-pic .user-pic-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 4.3vw;
+  height: 4.3vw;
+  border-radius: 50%;
+  z-index: 1;
 }
 
 .right-side .panel-wrapper .user .user-name {
@@ -655,6 +668,7 @@ section .content .right-side {
   border-radius: 2vw;
   background: #f7f7f7;
   padding: 2vw;
+  z-index: 1000;
 }
 
 .user-login .close,
