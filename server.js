@@ -1,3 +1,4 @@
+const compression = require("compression");
 const config = require("./config");
 const express = require("express");
 const path = require("path");
@@ -12,6 +13,7 @@ app.use(express.static("public"));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(compression());
 
 const exphbs = require("express-handlebars");
 const helpers = require("./views/helpers");
